@@ -1,6 +1,6 @@
 pipeline {
     agent { docker 'public.ecr.aws/docker/library/golang:latest' }
-   environment {
+    environment {
       GOCACHE = "${env.WORKSPACE}/.build_cache"
     }
     options {
