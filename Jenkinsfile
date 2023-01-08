@@ -22,7 +22,7 @@ pipeline {
                 sh "go build --tags extended"
             }
         }
-        stage('Test') {
+        stage('Tests') {
             steps {
                 sh './hugo env'
             }
